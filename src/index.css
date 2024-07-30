@@ -1,0 +1,156 @@
+// USING CSS GRID
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  background-color: beige;
+  position: absolute;
+  display: grid;
+  height: 90%;
+  width: 100%;
+  grid-template-rows: 1fr;
+  grid-template-columns: 2fr 8fr;
+  grid-template-areas:
+    "Sidebar MainArea"
+    "Sidebar MainArea";
+  grid-gap: 0.2rem;
+}
+
+.section__sidebar {
+  background-color: teal;
+  grid-area: Sidebar;
+}
+
+.section__MainArea {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: pink;
+  grid-area: MainArea;
+}
+
+.box1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34%;
+  background-color: brown;
+  margin-top: 4px solid black;
+}
+.box2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33%;
+  background-color: grey;
+}
+.box3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 33%;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: absolute;
+  transform: translateX(-50%);
+  left: 50%;
+  top: 0.5%;
+  background-color: beige;
+  width: 100%;
+  height: 33px;
+}
+
+.logo {
+  height: 100%;
+}
+
+.icons {
+  padding: 0 10px;
+} */
+
+// WITHOUT CSS GRID
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#root {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+
+.header {
+  background-color: teal;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 0 5px 0 0;
+}
+
+.section__sidebar {
+  display: flex;
+  position: absolute;
+  flex-direction: column;
+  left: 0;
+  width: 15%;
+  height: 100%;
+  background-color: white;
+  overflow: hidden;
+  top: 4.2%;
+  /* margin-right: 10px; */
+
+  /* height: 100vh; */
+}
+
+.section__MainArea {
+  display: flex;
+  position: absolute;
+  left: 15%;
+  overflow: hidden;
+  right: 0;
+  background-color: brown;
+  /* width: 80%; */
+  height: 100%;
+  top: 4.2%;
+  margin-left: 5px;
+}
+.box1 {
+  height: 33%;
+  background-color: yellow;
+  /* border-bottom: 8px solid teal; */
+  margin-bottom: 5px;
+}
+
+.box2 {
+  height: 33%;
+  background-color: pink;
+}
+
+.box3 {
+  height: 33%;
+  background-color: green;
+  margin-top: 5px;
+}
