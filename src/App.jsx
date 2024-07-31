@@ -1,4 +1,3 @@
-import Footer from "./Footer";
 import Header from "./Header";
 import MainArea from "./MainArea";
 import Sidebar from "./Sidebar";
@@ -11,7 +10,6 @@ function App() {
         <Sidebar />
         <MainArea />
       </main>
-      <Footer />
     </>
   );
 }
